@@ -3,50 +3,56 @@
 
 
   function tempCelcius() {
-    let given = (document.getElementById('inputNumber').value);
 
-    let option = (document.getElementById('tempOption').value);
+let given = (document.getElementById('inputNumber').value);
+
+let option = (document.getElementById('tempOption').value);
     
-    let result;
+    let resultCelcius;
 
     if(option === 'Celcius'){
-      document.getElementById("outputCelcius").innerHTML = given + " °C";
+      document.getElementById("outputCelcius").innerHTML = Number(given) + " °C";
     }else if (option === 'Kelvin'){
-      result = given - 273.15;
-      document.getElementById("outputCelcius").innerHTML = result + " °C";
+      resultCelcius = given - 273.15;
+      document.getElementById("outputCelcius").innerHTML = resultCelcius + " °C";
     }else if (option === 'Fahrenheit'){
-      result = (given - 32) * (5/9);
-      document.getElementById("outputCelcius").innerHTML = result + " °C";
-
+      resultCelcius = (given - 32) * (5/9);
+      document.getElementById("outputCelcius").innerHTML = resultCelcius + " °C";
     }
+ }
 
+function tempFahrenheit() {
+let given = (document.getElementById('inputNumber').value);
 
-        }
+let option = (document.getElementById('tempOption').value);
+  let resultFahrenheit;
 
-
-
-
-// if (document.getElementById("tempOption").value === "Celcius");{
-
-//   function tempCelcius() {
-//     let inputNumber = document.getElementById("inputNumber").value;
-    
-//     // document.getElementById("outputFahrenheit").innerHTML = (Number(inputNumber *  9/5)) + 32 +" °F";
-//     // document.getElementById("outputKelvin").innerHTML = Number(inputNumber) + 273.15 +" °K";
-//     document.getElementById("outputCelcius").innerHTML = inputNumber + " °C";
-//     }
-// }
-// function tempFahrenheit() {
-//   let inputNumber = document.getElementById("inputNumber").value;
+    if(option === 'Celcius'){
+      resultFahrenheit = Number(given) * (9/5) + 32;
+      document.getElementById("outputFahrenheit").innerHTML = resultFahrenheit + " °F";
+    }else if (option === 'Kelvin'){
+      resultFahrenheit = (Number(given) - 273.15) * (9/5) + 32;
+      document.getElementById("outputFahrenheit").innerHTML = resultFahrenheit + " °F";
+    }else if (option === 'Fahrenheit'){
+      
+      document.getElementById("outputFahrenheit").innerHTML = given + " °F";
+    }
   
-//   document.getElementById("outputFahrenheit").innerHTML = (Number(inputNumber *  9/5)) + 32 +" °F";
-//   // document.getElementById("outputKelvin").innerHTML = Number(inputNumber) + 273.15 +" °K";
-//   // document.getElementById("outputCelcius").innerHTML = inputNumber + " °C";
-//   }
-// function tempKelvin() {
-//   let inputNumber = document.getElementById("inputNumber").value;
+  }
+function tempKelvin() {
+let given = (document.getElementById('inputNumber').value);
+
+let option = (document.getElementById('tempOption').value);
+  let resultKelvin;
+
+    if(option === 'Celcius'){
+      resultKelvin = Number(given) + 273.15;
+      document.getElementById("outputKelvin").innerHTML = resultKelvin + " °K";
+    }else if (option === 'Kelvin'){
+      document.getElementById("outputKelvin").innerHTML = given + " °K";
+    }else if (option === 'Fahrenheit'){
+      resultKelvin = (Number(given) - 32) * (5/9) + 273.15;
+      document.getElementById("outputKelvin").innerHTML = resultKelvin + " °K";
+    }
   
-//   // document.getElementById("outputFahrenheit").innerHTML = (Number(inputNumber *  9/5)) + 32 +" °F";
-//   document.getElementById("outputKelvin").innerHTML = Number(inputNumber) + 273.15 +" °K";
-//   // document.getElementById("outputCelcius").innerHTML = inputNumber + " °C";
-  // }
+  }
