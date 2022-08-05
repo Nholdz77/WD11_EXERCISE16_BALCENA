@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 16</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="bg-info justify-content-evenly">
-        <h1 class="text-center">CONVERSION CALCULATOR</h1>
-        <h3 class="text-center">TEMPERATURE</h3>
+      <h1 class="text-center">CONVERSION CALCULATOR</h1>
+      <h3 class="text-center">TEMPERATURE</h3>
     </div>
 
-        <div class="container-fluid" >
-            <div class="row">
-                <div class="d-flex col-md-6 col-sm-6 col-12 justify-content-center align-items-center gap-5 bg-warning" id="firstRow">
-                    <label style="width: 100px;" class="text-end">Enter Number</label>
-                    <input class="text-center" type="number" id="inputNumber" style="width: 100px; height: 50px;">
-                
-                        <select name="Temperature" id="tempOption" style="width: 100px; height: 50px;">
-                            <option value="Celcius">Celcius</option>
-                            <option value="Fahrenheit">Fahrenheit</option>
-                            <option value="Kelvin">Kelvin</option>
-                        </select>
-                
-                    <button onclick="tempCelcius()" id="btnCelcius" style="width: 100px;">Celcius</button>
-                    <button onclick="tempFahrenheit()" id="btnFahrenheit" style="width: 100px;">Fahrenheit</button>
-                    <button onclick="tempKelvin()" id="btnKelvin" style="width: 100px;">Kelvin</button>
-                </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-md-6 col-sm-6 col-12 gap-5 bg-warning"
+          id="firstRow"
+        >
+        <!-- inputing number -->
+          <label style="width: 100px" class="text-end">Enter Number
+          <input
+            class="text-center"
+            type="number"
+            id="inputNumber"
+            style="width: 100px; height: 50px"
+          /></label>
 
-                <div class="d-flex col-md-6 justify-content-center align-items-center gap-5 bg-primary" id="secondRow">
-                    <label style="width: 200px; align-items:center;" class="text-center"><span class="text-center" id="outputCelcius"></span></label>
-                    <label style="width: 200px; align-items:center;" class="text-center"><span class="text-center" id="outputFahrenheit"></span></label>
-                    <label style="width: 200px; align-items:center;" class="text-center"><span class="text-center" id="outputKelvin"></span></label>
-                </div>
+          <select
+            name="Temperature"
+            id="tempOption"
+            style="width: 100px; height: 50px"
+          >
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
 
-            </div>  
-        </div>        
-                            <!-- <div class="d-flex col-lg-6 justify-content-center align-items-center" id="firstRow">
+          <button onclick="tempCelcius()" id="btnCelcius" style="width: 100px">
+            Celcius
+          </button>
+
+          <button
+            onclick="tempFahrenheit()"
+            id="btnFahrenheit"
+            style="width: 100px"
+          >
+            Fahrenheit
+          </button>
+
+          <button onclick="tempKelvin()" id="btnKelvin" style="width: 100px">
+            Kelvin
+          </button>
+          
+        </div>
+        <br>
+        <br>
+        <div
+          class="d-flex col-md-6 justify-content-center align-items-center gap-5 bg-primary"
+          id="secondRow"
+        >
+
+          <label style="width: 200px; align-items: center" class="text-center"
+            ><span class="text-center" id="outputCelcius"></span
+          ></label>
+          
+          <label style="width: 200px; align-items: center" class="text-center"
+            ><span class="text-center" id="outputFahrenheit"></span
+          ></label>
+          <label style="width: 200px; align-items: center" class="text-center"
+            ><span class="text-center" id="outputKelvin"></span
+          ></label>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex col-lg-6 justify-content-center align-items-center" id="firstRow">
 
                                 <div class="row justify-content-center">
 
@@ -75,7 +111,7 @@
                             </div>
 
                         </div>        -->
-                        <!-- <div class="row">
+    <!-- <div class="row">
                         <div class="col-lg-6">
                                 <div class="col-lg-1">
                                     <label>Enter Number</label>
@@ -95,9 +131,8 @@
                                 </div>
                             </div>
                         </div> -->
-           
 
-            <!-- <div>
+    <!-- <div>
                 Enter number:<input type="number" id="num1" placeholder="Celcius">
            
                          <input type="button" id onclick="tempConverter()" value="Convert">
@@ -108,8 +143,6 @@
                          <label class ="px-5 mx-5 text-center"></label>
                          <label class ="px-5 mx-5 text-center"></label>
            </div> -->
-    
-    
-</body>
-<script src="main.js"></script>
+  </body>
+  <script src="main.js"></script>
 </html>
