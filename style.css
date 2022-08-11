@@ -3,7 +3,7 @@
     padding: 0% !important;
 } */
 body{
-    background-image: url(/snow-images.jpg);
+    background-image: url('snow-images.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
