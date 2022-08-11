@@ -1,15 +1,58 @@
-* {
+/* * {
     margin: 0% !important;
     padding: 0% !important;
+} */
+body{
+    background-image: url(/snow-images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+ 
+#first-div option{
+font-weight: bold;
+}
+
+.Input-cont{
+    justify-content: center;
+}
+#tempOption{
+    color: black;
+    border-radius: 5px;
+    outline: 1px;
+}
+
+#tempOption{
+    font-weight: bold;
+}
+
+#inputNumber{
+    border-radius: 5px;
+    outline: 1px;
+}
+
+#firstRow{
+    justify-content: center;
+}
+
+
 #firstRow button{
     border-radius: 5px;
     outline: 1px;
     height: 50px;
+    font-weight: bold;
+    margin: auto;
 }
-#secondRow label{
+#secondRow .container {
     border-radius: 5px;
     outline: 1px solid black;
+    width: 200px;
     height: 50px;
     text-align: center;
+    background-color: aliceblue;
+    margin: auto;
+    
+    
+}
+#secondRow .container p {
+    font-weight:bold;
 }
