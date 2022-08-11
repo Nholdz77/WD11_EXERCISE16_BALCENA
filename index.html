@@ -13,7 +13,7 @@
 
   <body>
     
-      <div class="container justify-content-evenly">
+      <div class="container justify-content-evenly pt-5">
         <h1 class="text-center">CONVERSION CALCULATOR</h1>
         <h3 class="text-center">TEMPERATURE</h3>
       </div>
@@ -81,24 +81,28 @@
 
       <!-- Output Labels -->
 
-      <div class="d-flex mx-auto justify-content-center" id="secondRow">
-        <div
-          class="container d-flex mx-5 align-items-center justify-content-center"
-        >
-          <p class="text-center pt-3" id="outputCelcius" style="font-size: 20px;"></p>
-        </div>
-        <div
-          class="container d-flex mx-5 align-items-center justify-content-center"
-        >
-          <p class="text-center pt-3" id="outputFahrenheit" style="font-size: 20px;"></p>
-        </div>
-        <div
-          class="container d-flex mx-5 align-items-center justify-content-center"
-        >
-          <p class="text-center pt-3" id="outputKelvin" style="font-size: 20px;"></p>
-        </div>
-      </div>
-   
+  <div class="d-flex mx-auto justify-content-center" id="secondRow">
+    <div
+      class="container d-flex mx-5 align-items-center justify-content-center"
+    >
+      <p class="text-center pt-3" id="outputCelcius" style="font-size: 20px;"></p>
+    </div>
+    <div
+      class="container d-flex mx-5 align-items-center justify-content-center"
+    >
+      <p class="text-center pt-3" id="outputFahrenheit" style="font-size: 20px;"></p>
+    </div>
+    <div
+      class="container d-flex mx-5 align-items-center justify-content-center"
+    >
+      <p class="text-center pt-3" id="outputKelvin" style="font-size: 20px;"></p>
+    </div>
+  </div>
+
+<div class="d-flex justify-content-center  pt-5"><button onclick="(clearInput())" style="width:200px; height: 50px; border-radius: 10px; border-color: rgb(7, 7, 7);" class="bg-transparent text-danger"><b>Clear</b></button>
+</div>
+      
+
   </body>
   <script src="main.js"></script>
 </html>
